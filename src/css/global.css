@@ -1,0 +1,22 @@
+:root {
+
+  --color-main:  #F7F8FB;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-red: #EA4335;
+}
+
+.active {
+  font-family: "Inter", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+}
+.crsl {
+  width: auto;
+  margin: auto;
+  grid-area: t;
+}
+.thumbs {
+  /* display: none; */
+}
