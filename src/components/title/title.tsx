@@ -6,6 +6,8 @@ interface TitleProps {
   value?: JSX.Element;
   top?: boolean;
   centered?: boolean;
+  decorations?: string;
+  fontSize?: number;
 }
 
 const StyledTitle = styled.h2<TitleProps>`
@@ -23,7 +25,11 @@ const StyledTitle = styled.h2<TitleProps>`
           text-align: center;
         `
       : ``}
-  
+
+text-decoration: ${({ decorations }) => decorations};
+
+  font-size: ${({ fontSize }) => fontSize + "px"} !important;
+  padding-bottom: 5px;
 
   font-style: normal;
   font-weight: 600;

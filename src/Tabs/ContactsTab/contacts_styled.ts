@@ -16,7 +16,12 @@ export const ContactsContainer = styled.div`
 `;
 
 export const Contacts = styled.div`
-  & div:first-child {
+  display: flex;
+
+  margin-inline: auto;
+  gap: 30px;
+
+  /* & div:first-child {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
   }
@@ -25,20 +30,10 @@ export const Contacts = styled.div`
   }
   & div {
     padding: 15px 0;
-  }
+  } */
 `;
 
 export const ContactItem = styled.div`
-  display: grid;
-
-  & p {
-    display: flex;
-    align-items: center;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-
   ${isMobile
     ? css`
         grid-template-columns: 40px 1fr;

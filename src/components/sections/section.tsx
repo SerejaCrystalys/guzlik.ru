@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import { isMobile } from "react-device-detect";
 
 interface SectionProps {
-  children: any;
+  children: React.ReactNode;
   centered?: boolean;
   id: string;
 }
@@ -41,6 +41,7 @@ const SectionMain = styled.section<SectionProps>`
         margin: 0 40px;
       `
     : css`
+        border-bottom: 1px solid gray;
         min-height: calc(100vh - 180px);
 
         padding: 90px 0;
