@@ -4,7 +4,7 @@ import AboutTab from "./Tabs/AboutTab/about_tab";
 import ContactsTab from "./Tabs/ContactsTab/contacts_tab";
 import HelloTab from "./Tabs/HelloTab/hello-tab";
 
-function App() {
+const App = () => {
   return (
     <>
       <Header />
@@ -16,6 +16,6 @@ function App() {
       <Section id="sayhi" centered children={<ContactsTab />} />
     </>
   );
-}
+};
 
 export default App;

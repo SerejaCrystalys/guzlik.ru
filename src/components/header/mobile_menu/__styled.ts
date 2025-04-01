@@ -21,10 +21,10 @@ export const MenuBody = styled.div<MenuProps>`
   left: 0;
   float: bottom;
   bottom: 0px;
-  width: 100vw;
+  width: calc(100vw - 60px);
   height: fit-content;
 
-  border-radius: 17px 17px 0px 0px;
+  border-radius: 8px 8px 0px 0px;
   background: #fff;
   box-shadow: 0px -10px 7px -7px rgba(144, 144, 144, 0.23);
 

@@ -7,16 +7,18 @@ interface Props {
   setMenu: (e: boolean) => void;
 }
 export const MobileNavBar = ({ menu, setMenu }: Props) => {
-  const menuRef = useRef<any>(null);
+  const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (!menu) return;
-    const handleMouseClick = (e: any) => {
+    const handleMouseClick = (e: MouseEvent) => {
       if (!menuRef.current) return;
-      if (!menuRef.current.contains(e.target) && e.target.id !== "menubutton") {
+      const node = e.target as HTMLElement;
+      if (!menuRef.current.contains(node) && node.id !== "menubutton") {
         setMenu(false);
       }
     };
+
     document.addEventListener("click", handleMouseClick);
     return () => {
       document.removeEventListener("click", handleMouseClick);
