@@ -3,7 +3,6 @@ import Section from "./components/sections/section";
 import AboutTab from "./tabs/about/about_tab";
 import ContactsTab from "./tabs/contacts/contacts_tab";
 import MainTab from "./tabs/main/main-tab";
-import PersonalTab from "./tabs/personal/pet";
 
 const App = () => {
   return (

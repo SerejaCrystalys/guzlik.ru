@@ -1,8 +1,8 @@
-import Content from "../../components/content/content";
+// import Content from "../../components/content/content";
 import Title from "../../components/title/title";
-import { ContactItem, Contacts, ContactsContainer } from "./contacts_styled";
+import { ContactItem, Contacts } from "./contacts_styled";
 
-import { isMobile } from "react-device-detect";
+// import { isMobile } from "react-device-detect";
 
 const contacts = [
   {
