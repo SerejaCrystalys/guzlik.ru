@@ -1,18 +1,18 @@
 import Header from "./components/header/header";
 import Section from "./components/sections/section";
-import AboutTab from "./Tabs/AboutTab/about_tab";
-import ContactsTab from "./Tabs/ContactsTab/contacts_tab";
-import HelloTab from "./Tabs/HelloTab/hello-tab";
+import AboutTab from "./tabs/about/about_tab";
+import ContactsTab from "./tabs/contacts/contacts_tab";
+import MainTab from "./tabs/main/main-tab";
+import PersonalTab from "./tabs/personal/pet";
 
 const App = () => {
   return (
     <>
       <Header />
 
-      <Section id="hello" centered children={<HelloTab />} />
+      <Section id="main" centered children={<MainTab />} />
       <Section id="about" centered children={<AboutTab />} />
-      {/* <Section id="stack" children={<StackTab />} /> */}
-      {/* <Section id="projects" children={<ProjectsTab />} /> */}
+      {/* <Section id="pet" children={<PersonalTab />} /> */}
       <Section id="sayhi" centered children={<ContactsTab />} />
     </>
   );

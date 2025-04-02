@@ -3,7 +3,7 @@ import Title from "../../components/title/title";
 
 const textComplete = "frontend.web (developer)";
 
-const HelloTab = () => {
+const MainTab = () => {
   const [text, setText] = useState<string>("");
   const [dashColor, setDashColor] = useState<boolean>(false);
 
@@ -46,4 +46,4 @@ const HelloTab = () => {
   );
 };
 
-export default HelloTab;
+export default MainTab;
