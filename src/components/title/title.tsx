@@ -11,29 +11,31 @@ interface TitleProps {
 }
 
 const StyledTitle = styled.h2<TitleProps>`
-  color: #1a1a1c;
-  font-family: sans-serif;
-  ${({ top }) =>
-    top
-      ? css`
-          margin-top: 0px;
-        `
-      : ``}
-  ${({ centered }) =>
-    centered
-      ? css`
-          text-align: center;
-        `
-      : ``}
-
-text-decoration: ${({ decorations }) => decorations};
-
-  font-size: ${({ fontSize }) => fontSize + "px"} !important;
   padding-bottom: 5px;
 
+  color: #1a1a1c;
+  font-family: sans-serif;
+  font-size: ${({ fontSize }) => fontSize + "px"} !important;
   font-style: normal;
-  font-weight: 600;
   line-height: normal;
+  font-weight: 600;
+
+  cursor: default;
+
+  text-decoration: ${({ decorations }) => decorations};
+
+  ${({ top }) =>
+    top &&
+    css`
+      margin-top: 0px;
+    `}
+
+  ${({ centered }) =>
+    centered &&
+    css`
+      text-align: center;
+    `}
+
   ${isMobile
     ? css`
         font-size: 32px;

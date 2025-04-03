@@ -9,9 +9,8 @@ interface SectionProps {
 
 const SectionMain = styled.section<SectionProps>`
   ${({ centered }) =>
-    centered
-      ? `
-    ${
+    centered &&
+    `${
       isMobile
         ? css`
             display: flex;
@@ -30,8 +29,7 @@ const SectionMain = styled.section<SectionProps>`
             }
           `
     }
-   `
-      : ``}
+    `}
 
   ${isMobile
     ? css`

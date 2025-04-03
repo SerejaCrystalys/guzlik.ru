@@ -17,20 +17,8 @@ export const ContactsContainer = styled.div`
 
 export const Contacts = styled.div`
   display: flex;
-
   margin-inline: auto;
   gap: 30px;
-
-  /* & div:first-child {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-  }
-  & div:not(:first-child) {
-    border-bottom: 1px solid black;
-  }
-  & div {
-    padding: 15px 0;
-  } */
 `;
 
 export const ContactItem = styled.div`
